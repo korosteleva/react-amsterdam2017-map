@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Amsterdam Map</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/d3.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="./js/datamaps.world.min.js"></script>
+</head>
+<body>
+<h1 class="title">React Amsterdam Speakers' Map <span class="title-tag">7 countries</span></h1>
+<div id="map" class="container"></div>
+<script>
+    var colors = d3.scale.category10();
+    var map = new Datamap({
+        element: document.getElementById("map"),
+        projection: 'mercator',
+        fills: {
+            defaultFill: "#ABDDA4"
+        }
+    });
+
+    map.updateChoropleth({
+        AUT: colors(Math.random() * 20),
+        USA: colors(Math.random() * 20),
+        GBR: colors(Math.random() * 20),
+        POL: colors(Math.random() * 20),
+        NLD: colors(Math.random() * 20),
+        ISR: colors(Math.random() * 20),
+        FRA: colors(Math.random() * 20)
+    });
+
+</script>
+</body>
+</html>

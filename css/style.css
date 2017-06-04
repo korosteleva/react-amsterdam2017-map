@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 90vw;
+    height: 80vh;
+}
+
+.title {
+    font-family: Arial, san-serif;
+    text-align: center;
+}
+
+.title-tag {
+    font-size: .5em;
+    font-weight: normal;
+    background: #efefef;
+    padding: 4px 7px;
+    border-radius: 7px;
+    vertical-align: middle;
+}
