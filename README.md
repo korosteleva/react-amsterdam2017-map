@@ -3,6 +3,4 @@
 Conference's site [react.amsterdam](https://react.amsterdam/). 
 
 ### Demo
-https://korosteleva.github.io/react-amsterdam2017-map
-
-
+https://korosteleva.github.io/react-amsterdam2017-map/index.html
